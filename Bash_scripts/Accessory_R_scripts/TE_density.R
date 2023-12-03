@@ -7,8 +7,6 @@ library(tidyr)
 library(gridExtra)
 library(dplyr)
 
-setwd("C:/Users/Nathalie/Dropbox/WallLizard_NanoporeAssemblies/GWAS/TEs")
-
 Data <- read.table("Chr12_binning_summary_10kb", header = F)
 Data <- Data[-6111,]
 Data$V2 <- as.integer(Data$V2)

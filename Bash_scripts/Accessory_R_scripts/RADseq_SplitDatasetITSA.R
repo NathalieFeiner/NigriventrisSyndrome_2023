@@ -72,7 +72,7 @@ p1 <- ggplot(Data_all, aes(x=V3.y, y=V4.y, color=region)) +
   geom_point() + scale_color_manual(values=c("#E69F00","#D55E00", "#56B4E9")) +
   xlab(paste("PC1\n",evec1.pc, "% of observed genetic variation", sep="")) +
   ylab(paste("PC2\n",evec2.pc, "% of observed genetic variation", sep="")) +
-  theme_bw()
+  theme_bw() + theme(legend.position="none")
 
 p2 <- ggplot(Data_all, aes(x=V3.y, y=V4.y, color=V1.x)) +
   geom_point(alpha=0.2) + stat_ellipse() + scale_color_manual(values=rep(c("black"),71)) +
@@ -80,8 +80,14 @@ p2 <- ggplot(Data_all, aes(x=V3.y, y=V4.y, color=V1.x)) +
   ylab(paste("PC2\n",evec2.pc, "% of observed genetic variation", sep="")) +
   theme_bw() + theme(legend.position="none")
 
-pdf("PCAs_890ind.pdf", width = 15  , height = 7, useDingbats=FALSE)
-grid.arrange(p1,p2, ncol=2)
+p3 <- ggplot(Data_all, aes(x=V3.y, y=V4.y, color=GreenResolved)) + 
+  geom_point(alpha=0.8) + scale_color_gradientn(colors = c("#816830","#675326","#4d3e1d","#336600","#339900","#66CC33")) +
+  xlab(paste("PC1\n",evec1.pc, "% of observed genetic variation", sep="")) +
+  ylab(paste("PC2\n",evec2.pc, "% of observed genetic variation", sep="")) +
+  theme_bw() + theme(legend.position="none")
+
+pdf("PCAs_890ind.pdf", width = 15  , height = 4.5, useDingbats=FALSE)
+grid.arrange(p1,p2,p3, ncol=3)
 dev.off()
 
 #extract pure and mixed populations:

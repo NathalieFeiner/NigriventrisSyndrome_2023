@@ -113,16 +113,7 @@ data_M <- subset(data, (lineage_intro=="SA_intro" | lineage== "ITA" | lineage== 
 #delete incomplete obs
 data_M <- data_M[complete.cases(data_M[,c(8,16,11,14,15)]), ]
 
-###impute missing data
-#data_sub <- data_F[,c(8,16,11,14,15)]
-#summary(data_sub)
-#pc <- pca(data_sub, nPcs=5, method="ppca", seed=123)
-#imputed <- as.data.frame(completeObs(pc))
-#data_M <- data_M[,-c(8,16,11,14,15)]
-#data_F <- data_F[,-c(8,16,11,14,15)]
-#data_final <- cbind(data_M, imputed)
-#data_final <- cbind(data_F, imputed)
-
+#scale the data and split by lineage
 data_M[,c(8,16,11,14,15)] <- scale(data_M[,c(8,16,11,14,15)])
 data_M_IT <- subset(data_M, lineage=="ITA")
 data_M_Hyb <- subset(data_M, lineage=="MIXED")

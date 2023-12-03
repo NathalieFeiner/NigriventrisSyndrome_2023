@@ -11,8 +11,6 @@ library(scales)
 
 options(scipen=999)
 
-setwd("C:/Users/Nathalie/Dropbox/MS_GreenPackage/Analyses/R_scripts")
-
 #Import the current new data set - this includes data up till 2018
 data <- read.csv("Input_files/Phenotype_data_final_June2023.csv")
 

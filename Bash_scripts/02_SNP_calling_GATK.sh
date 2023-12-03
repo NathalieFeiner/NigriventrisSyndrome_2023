@@ -175,6 +175,7 @@ vcftools --vcf GATK_all_SNP_final_new.vcf --bed ../cand_region_21_22.bed --out G
 
 #run PCA analysis
 plink --vcf GATK_all_SNP_final_new.vcf --pca --out populations_PCA --aec
+# the resulting files were imported into R and plotted with the R-script Plot_PCA_WGS.R
 
 #same for pre-filtered SNPs
 vcftools --gzvcf ../GATK_all_SNP_filtered.vcf.gz --bed ../cand_region.bed --out GATK_all_SNP_final_prefiltered_cand.vcf --recode --recode-INFO-all

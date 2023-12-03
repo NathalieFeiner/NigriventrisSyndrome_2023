@@ -8,6 +8,7 @@ module load GATK/4.2.0.0
 module load FastQC/0.11.9
 module load trimmomatic/0.36
 module load samtools/1.14
+module load plink/1.90b4.9
 
 mkdir /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24
 
@@ -171,6 +172,9 @@ vcftools --vcf GATK_all_SNP_final.vcf --bed ../cand_region.bed --out GATK_all_SN
 vcftools --vcf GATK_all_SNP_final.vcf --bed ../cand_region_plusminus1mb.bed --out GATK_all_SNP_final_cand1mb --recode --recode-INFO-all
 vcftools --vcf GATK_all_SNP_final.vcf --bed ../cand_region_plusminus20mb.bed --out GATK_all_SNP_final_cand20mb --recode --recode-INFO-all
 vcftools --vcf GATK_all_SNP_final_new.vcf --bed ../cand_region_21_22.bed --out GATK_all_SNP_final_new_cand21_22 --recode --recode-INFO-all
+
+#run PCA analysis
+plink --vcf GATK_all_SNP_final_new.vcf --pca --out populations_PCA --aec
 
 #same for pre-filtered SNPs
 #vcftools --gzvcf ../GATK_all_SNP_filtered.vcf.gz --bed ../cand_region.bed --out GATK_all_SNP_final_prefiltered_cand.vcf --recode --recode-INFO-all

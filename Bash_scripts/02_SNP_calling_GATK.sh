@@ -177,8 +177,8 @@ vcftools --vcf GATK_all_SNP_final_new.vcf --bed ../cand_region_21_22.bed --out G
 plink --vcf GATK_all_SNP_final_new.vcf --pca --out populations_PCA --aec
 
 #same for pre-filtered SNPs
-#vcftools --gzvcf ../GATK_all_SNP_filtered.vcf.gz --bed ../cand_region.bed --out GATK_all_SNP_final_prefiltered_cand.vcf --recode --recode-INFO-all
-#vcftools --gzvcf ../GATK_all_SNP_filtered.vcf.gz --bed ../cand_region_plusminus1mb.bed --out GATK_all_SNP_final_prefiltered_cand1mb.vcf --recode --recode-INFO-all
-#vcftools --gzvcf ../GATK_all_SNP_filtered.vcf.gz --bed ../cand_region_plusminus20mb.bed --out GATK_all_SNP_final_prefiltered_cand20mb.vcf --recode --recode-INFO-all
+vcftools --gzvcf ../GATK_all_SNP_filtered.vcf.gz --bed ../cand_region.bed --out GATK_all_SNP_final_prefiltered_cand.vcf --recode --recode-INFO-all
+vcftools --gzvcf ../GATK_all_SNP_filtered.vcf.gz --bed ../cand_region_plusminus1mb.bed --out GATK_all_SNP_final_prefiltered_cand1mb.vcf --recode --recode-INFO-all
+vcftools --gzvcf ../GATK_all_SNP_filtered.vcf.gz --bed ../cand_region_plusminus20mb.bed --out GATK_all_SNP_final_prefiltered_cand20mb.vcf --recode --recode-INFO-all
 
 #note: the file GATK_all_SNP_final.vcf will be used as input for FST-outlier scans and Tajima's D analyses (see script 04)

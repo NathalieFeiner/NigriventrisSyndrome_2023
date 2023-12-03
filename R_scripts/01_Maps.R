@@ -3,8 +3,6 @@
 
 rm(list=ls())
 
-setwd("C:/Users/Nathalie/Dropbox/MS_GreenPackage/Analyses/R_scripts")
-
 #load required packages
 library(ggplot2)
 library(rgdal)

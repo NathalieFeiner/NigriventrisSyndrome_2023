@@ -10,8 +10,6 @@ library(qqman)
 library(gridExtra)
 library(EnhancedVolcano)
 
-setwd("/crex/proj/snic2020-6-73/Projects/Wallie_Pigmentation_RNAseq_BigExperiment/DESeq2_analyses")
-
 #Read in sample sheet (metadata) and counttable
 sampletable <- read.csv2("colData_all_RepCollapsed.csv", header=T, sep="," )
 rownames(sampletable) <- sampletable$target_id

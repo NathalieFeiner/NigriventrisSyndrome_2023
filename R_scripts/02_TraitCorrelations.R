@@ -9,8 +9,6 @@ library(dplyr)
 
 options(scipen=999)
 
-setwd("C:/Users/Nathalie/Dropbox/WallLizard_NanoporeAssemblies/GreenPackage/PhenotypeDataAnalyses")
-
 #Import the current new data set - this includes data up till 2018
 data <- read.csv("Phenotype_data_final_June2023.csv")
 

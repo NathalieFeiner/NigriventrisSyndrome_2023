@@ -1,6 +1,6 @@
 This includes the code used for the following manuscript:
 
-**Adaptive introgression reveals the genetic basis of a sexually selected phenotype in wall lizards**
+**Adaptive introgression reveals the genetic basis of a sexually selected syndrome in wall lizards**
 
 Nathalie Feiner, Weizhao Yang, Ignas Bunikis, Geoffrey M While & Tobias Uller
 

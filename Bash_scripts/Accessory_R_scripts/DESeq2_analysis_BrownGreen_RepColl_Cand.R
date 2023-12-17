@@ -141,7 +141,7 @@ resFilt_BrownGreen$Genes <- rownames(resFilt_BrownGreen)
 resFilt_BrownGreen_sig <- subset(resFilt_BrownGreen, padj < 0.05)
 write.table(resFilt_BrownGreen_sig, "DE_Genes_BrownGreen", row.names = F, col.names = T, quote = F, sep="\t")
 
-#This code creates Fig. 4f
+### This code creates Fig. 4F
 #see here   https://github.com/kevinblighe/EnhancedVolcano
 candidates <- c("MKX","RAB18","pks1","pks2","ptchd3","cyp2k6","ymel1l","pks3","pks4","pks5","mastl","acbd5","cetn2","abil","ptchd32","ptchd35","ptchd3X1","ptchd34","pkssense","ptchd33")
 color_genes <- c('SPR','KIT','FZD2','EDNRB','DUSP2','DUSP14','DGAT2')

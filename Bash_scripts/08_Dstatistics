@@ -8,3 +8,4 @@ bcftools filter GATK_all_SNP_final.vcf.gz -r CM014754.1 > chr12.vcf
 
 ./Dsuite/Build/Dsuite Dinvestigate -w 100,50 chr12.vcf SETS.txt trios.txt
 
+# the resulting files were imported into R and plotted with the R-script Dinvestigate.R

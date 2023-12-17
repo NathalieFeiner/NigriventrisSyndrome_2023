@@ -42,6 +42,8 @@ data_IT_F <- subset(data, lineage=="ITA" & sex=="F")
 data_Hyb_F <- subset(data, lineage=="MIXED" & sex=="F")
 data_SAintro_F <- subset(data, lineage_intro == "SA_intro" & sex=="F")
 
+############### Fig. 1D - pairwise correlation heatmaps
+
 #correlation IT males
 matrix_IT_M <- as.matrix(scale(data_IT_M[,c(8,16,11,14,15)]))
 cormat <- rcorr(matrix_IT_M, type = "pearson")

@@ -1,4 +1,4 @@
-### This code creates Fig. 2b and d
+### This code creates Fig. 2B and D
 
 dev.off()
 rm(list=ls())

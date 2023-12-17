@@ -1,4 +1,4 @@
-### This code generates Extended Data Fig. 7 a-c
+### This code generates fig. S12a-c
 
 dev.off()
 rm(list=ls())

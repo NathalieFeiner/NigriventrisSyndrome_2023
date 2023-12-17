@@ -1,3 +1,5 @@
+### This code creates fig. S3
+
 library(ggplot2)
 library(tidyr)
 library(gridExtra)

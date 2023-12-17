@@ -7,7 +7,8 @@ library(gridExtra)
 
 setwd("C:/Users/Nathalie/Dropbox/WallLizard_NanoporeAssemblies/")
 
-###This creates part of Fig. 2D
+############### Fig. 2D - gene annotations in candidate region (exon level)
+
 data <- read.csv("CandidateRegion_Genes_Location_Spa_exons.csv", header = T)
 dna_data <- dna_seg(data)
 dna_seg <- list(dna_data)
@@ -22,7 +23,8 @@ plot_gene_map(dna_segs=dna_seg, gene_type = "side_blocks", annotations = annot_P
               dna_seg_scale=TRUE, seg_plot_height=10)
 dev.off()
 
-###This creates part of Fig. 3B
+############### Fig. 3B - gene annotations in candidate region (gene level), comparison between different genomes
+                
 pdf("./Cand_region_genes_comp.pdf", width = 14  , height = 21.5, useDingbats=FALSE)
 data <- read.csv("CandidateRegion_Genes_Location_Spa.csv", header = T)
 dna_data <- dna_seg(data)

@@ -28,7 +28,7 @@ dds_BrownBlack <- DESeqDataSetFromMatrix(countData = count_matrix_BrownBlack, co
 dds_BrownBlack <- DESeq(dds_BrownBlack)
 dds_BrownBlack$pigmentation <- factor(dds_BrownBlack$pigmentation, levels=c("Brown", "Black")) #this is simply for making the plots more intuitive
 
-#This code creates the plots in Extended Data Fig. 7e
+### This code creates the plots in fig. S12
 d <- plotCounts(dds_BrownBlack, gene="MKX", intgroup="pigmentation",returnData=TRUE)
 P1 <- ggplot(d, aes(x=pigmentation, y=count, color=pigmentation)) + 
   geom_boxplot() + geom_point(position=position_jitter(), size=3) + 
@@ -142,7 +142,7 @@ resFilt_BrownBlack$Genes <- rownames(resFilt_BrownBlack)
 resFilt_BrownBlack_sig <- subset(resFilt_BrownBlack, padj < 0.05)
 write.table(resFilt_BrownBlack_sig, "DE_Genes_BrownBlack", row.names = F, col.names = T, quote = F, sep="\t")
 
-#This code creates Fig. 4f
+### This code creates Fig. 4E,F
 #see here   https://github.com/kevinblighe/EnhancedVolcano
 candidates <- c("MKX","RAB18","pks1","pks2","ptchd3","cyp2k6","ymel1l","pks3","pks4","pks5","mastl","acbd5","cetn2","abil","ptchd32","ptchd35","ptchd3X1","ptchd34","pkssense","ptchd33")
 color_genes <- c('DUSP14','GNAS','PCBD1','RDH5','RDH8','RPE65')

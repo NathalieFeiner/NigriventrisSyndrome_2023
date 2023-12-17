@@ -12,7 +12,7 @@ library(sf)
 library(raster)
 library(rnaturalearth)
 
-############### Fig. 1a - P. muralis distribution map
+############### Fig. 1A - P. muralis distribution map
 
 world <- ne_countries(scale = "large", returnclass = "sf") #change to large for final plot!
 
@@ -37,7 +37,7 @@ ggplot(data = world) +
   xlab("Longitude") + ylab("Latitude") +
   theme(panel.background = element_rect(fill = "aliceblue"))
 
-###############  Fig. 1e - Coastal cline pops
+###############  Fig. 1E - Coastal cline pops
 
 Locs_SAintro <- subset(Locs, abbpop == "LO" | abbpop == "NL" | abbpop == "VA" | 
                        abbpop == "ME" | abbpop == "GN" | abbpop == "RA" | abbpop == "SL" | abbpop == "LE" | 
@@ -57,7 +57,7 @@ ggplot(data = world_cropped) +
   theme(panel.background = element_rect(fill = "aliceblue"))
 dev.off()
 
-############### Fig. 1b
+############### Fig. 1B
 Data <- read.csv("Input_files/Phenotype_data_final_June2023.csv")
 Data <- Data[!is.na(Data$GreenResolved),]
 Data <- subset(Data, sex == "M")
@@ -96,7 +96,7 @@ r       <- raster(Krig)
 r.m     <- mask(r,g)
 #cbp1 <- c("#4d3e1d","#675326", "#816830","#336600","#339900","#66CC33")
 #cbp1 <- c("#4d3e1d","#675326", "#816830","#66CC33","#339900","#336600")
-cbp1 <- c("#816830","#675326","#4d3e1d","#336600","#339900","#66CC33")# Manual set of the palette.WHAT IS IMPORTANT HERE IS TO BE SURE THAT IF WE CHANGE ANY OF THE PALETTES HERE WE ALSO NEED TO CHANGE THEM IN THE BARPLOT FOR THE ADMIXTURE
+cbp1 <- c("#816830","#675326","#4d3e1d","#336600","#339900","#66CC33")# Manual set of the palette
 
 # Plot
 green<- tm_shape(r.m, raster.downsample = FALSE) + #plot interpolation in raster

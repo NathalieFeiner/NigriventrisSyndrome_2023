@@ -10,53 +10,53 @@ module load trimmomatic/0.36
 module load samtools/1.14
 module load plink/1.90b4.9
 
-mkdir /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24
+mkdir /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24
 
 #Run HaplotypeCaller
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014743.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014743.g.vcf.gz &
+-L CM014743.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014743.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014744.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014744.g.vcf.gz &
+-L CM014744.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014744.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014745.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014745.g.vcf.gz &
+-L CM014745.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014745.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014746.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014746.g.vcf.gz &
+-L CM014746.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014746.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014747.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014747.g.vcf.gz &
+-L CM014747.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014747.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014748.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014748.g.vcf.gz &
+-L CM014748.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014748.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014749.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014749.g.vcf.gz &
+-L CM014749.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014749.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014750.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014750.g.vcf.gz &
+-L CM014750.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014750.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014751.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014751.g.vcf.gz &
+-L CM014751.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014751.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014752.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014752.g.vcf.gz &
+-L CM014752.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014752.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014753.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014753.g.vcf.gz &
+-L CM014753.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014753.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014754.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014754.g.vcf.gz &
+-L CM014754.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014754.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014755.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014755.g.vcf.gz &
+-L CM014755.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014755.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014756.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014756.g.vcf.gz &
+-L CM014756.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014756.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014757.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014757.g.vcf.gz &
+-L CM014757.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014757.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014758.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014758.g.vcf.gz &
+-L CM014758.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014758.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014759.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014759.g.vcf.gz &
+-L CM014759.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014759.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014760.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014760.g.vcf.gz &
+-L CM014760.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014760.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
--L CM014761.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_CM014761.g.vcf.gz &
+-L CM014761.1 -ERC GVCF -O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_CM014761.g.vcf.gz &
 gatk --java-options "-Xmx6g" HaplotypeCaller -R /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic.fna -I mapping/AS24_marked_renamed.bam \
 -L /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Genomes/Pmu_Spanish/GCA_004329235.1_PodMur_1.0_genomic_nonChr.list -ERC GVCF \
--O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24/AS24_Rest.g.vcf.gz &
+-O /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24/AS24_Rest.g.vcf.gz &
 wait
 
-cd /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output_New/AS24
+cd /crex/proj/snic2020-6-73/Projects/Wallie_Genomics/Mappings/HaplotypeCaller_Output/AS24
 
 #index final g.vcf file:
 gatk IndexFeatureFile -I AS24_CM014743.g.vcf.gz
@@ -141,7 +141,7 @@ cd /proj/snic2020-16-107/nobackup/private/Analysis_149samples/GATK
 gatk IndexFeatureFile -I GATK_all_SNP_filtered.vcf.gz
 bcftools index GATK_all_SNP_filtered.vcf.gz
 
-vcftools --gzvcf GATK_all_SNP_filtered_new.vcf.gz --bed cand_region.bed --out GATK_all_SNP_filtered_new_cand.vcf --recode --recode-INFO-all #do this do get coverage-stats for un-filtered read data
+vcftools --gzvcf GATK_all_SNP_filtered.vcf.gz --bed cand_region.bed --out GATK_all_SNP_filtered_cand.vcf --recode --recode-INFO-all #do this do get coverage-stats for un-filtered read data
 
 bcftools view GATK_all_SNP_filtered.vcf.gz -f 'PASS,.' -Ob -o GATK_all_SNP_filtered_pass.bcf
 bcftools index GATK_all_SNP_filtered_pass.bcf
@@ -171,10 +171,10 @@ bcftools stats GATK_all_SNP_final.vcf > GATK_all_SNP_final.vchk #this returns st
 vcftools --vcf GATK_all_SNP_final.vcf --bed ../cand_region.bed --out GATK_all_SNP_final_cand --recode --recode-INFO-all
 vcftools --vcf GATK_all_SNP_final.vcf --bed ../cand_region_plusminus1mb.bed --out GATK_all_SNP_final_cand1mb --recode --recode-INFO-all
 vcftools --vcf GATK_all_SNP_final.vcf --bed ../cand_region_plusminus20mb.bed --out GATK_all_SNP_final_cand20mb --recode --recode-INFO-all
-vcftools --vcf GATK_all_SNP_final_new.vcf --bed ../cand_region_21_22.bed --out GATK_all_SNP_final_new_cand21_22 --recode --recode-INFO-all
+vcftools --vcf GATK_all_SNP_final.vcf --bed ../cand_region_21_22.bed --out GATK_all_SNP_final_cand21_22 --recode --recode-INFO-all
 
 #run PCA analysis
-plink --vcf GATK_all_SNP_final_new.vcf --pca --out populations_PCA --aec
+plink --vcf GATK_all_SNP_final.vcf --pca --out populations_PCA --aec
 # the resulting files were imported into R and plotted with the R-script Plot_PCA_WGS.R
 
 #same for pre-filtered SNPs

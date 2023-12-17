@@ -1,4 +1,4 @@
-### This code creates Extended Data Fig. 4
+### This code creates Fig. 3A and fig. S5
 
 dev.off()
 rm(list=ls())

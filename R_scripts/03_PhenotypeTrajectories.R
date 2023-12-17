@@ -17,6 +17,8 @@ data <- read.csv("Input_files/Phenotype_data_final_June2023.csv")
 #change some colnames
 colnames(data)[c(11,14,15,16)] <- c("green","black","blue","rel.headlength")
 
+############### Fig. 1E,F - Phenotypic trajectories along transect (SA - hybrid zone - IT)
+
 #cline along the coast
 clinecoast <- subset(data, abbpop == "LO" | abbpop == "NL" | abbpop == "VA" | 
             abbpop == "ME" | abbpop == "GN" | abbpop == "RA" | abbpop == "SL" | abbpop == "LE" | 

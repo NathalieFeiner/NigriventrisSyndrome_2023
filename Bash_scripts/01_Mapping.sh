@@ -74,7 +74,7 @@ java -jar $PICARD_HOME/picard.jar BuildBamIndex INPUT=mapping/AS24_marked.bam
 # remove intermediate files
 rm mapping/AS24.ba*
 
-#add meaningful IDs (needed for freebayes!)
+#add meaningful IDs
 java -jar $PICARD_HOME/picard.jar AddOrReplaceReadGroups INPUT=mapping/AS24_marked.bam OUTPUT=mapping/AS24_marked_renamed.bam RGID=AS24 RGLB=AS24-lib \
 RGPL=ILLUMINA RGPU=AS24-01 RGSM=AS24
 
